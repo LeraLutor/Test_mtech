@@ -66,7 +66,7 @@ def compression(st):
 
 # финальное сжатие
 def fin_compression(result):
-    while len(result) >4 or len(result)%4 != 0:
+    while len(result) >= 4 or len(result)%4 == 0:
         result = compression(result)
     return result
 
